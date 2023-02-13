@@ -28,7 +28,7 @@ app.post("/",function(req,res){
     const url="https://us18.api.mailchimp.com/3.0/lists/b91037b5f0";
     const options={
         method:"POST",
-        auth:"pandey_sushmit:76048b1d013dc46af40c9845fd7878b2-us18"
+        auth:"pandey_sushmit:{yourAPI}"
     }
     var jsondata=JSON.stringify(data);
     const request=https.request(url,options,function(response){
@@ -51,5 +51,3 @@ app.post("/failure",function(req,res){
 app.listen(3000,function(){
     console.log("Server is running on Port 3000.");
 });
-// b91037b5f0
-// 0ea9db9c103db169f6e9652cebd24765-us18
